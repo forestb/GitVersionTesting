@@ -46,4 +46,7 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <Target Name="AfterBuild" AfterTargets="EnsureWixToolsetInstalled">
+    <Message Text="GitVersion_MajorMinorPatch=$(GitVersion_MajorMinorPatch)" Importance="High" />
+	</Target>
 </Project>
